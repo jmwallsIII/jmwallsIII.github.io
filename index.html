@@ -122,21 +122,55 @@
   <p>
     <strong>Narrative:</strong>
     <a href="CS%20499%20Enhancement%20One%20Narrative.docx" target="_blank" rel="noopener">
-
       CS 499 Enhancement One Narrative (DOCX)
     </a>
   </p>
 
-  <p><strong>Application Execution Evidence:</strong></p>
+  <h3>Application Execution Evidence</h3>
 
-<img src="Main_powershell_dash.png"
-     alt="CS 499 Enhancement One Dashboard Running"
-     style="width: 100%; max-width: 800px; border-radius: 6px;">
+  <p><strong>Dashboard Running (Local Execution)</strong></p>
+  <img src="Main_powershell_dash.png"
+       alt="Dashboard Running Locally"
+       style="width:100%; max-width:900px; border-radius:6px; margin-bottom:20px;">
 
-  <p class="muted">
-    Note: Screenshots are included with the submission to demonstrate successful execution and enhancements.
-  </p>
 </section>
+
+<section>
+  <h2>Enhancement Three: Database Integration <span class="tag">CS 499</span></h2>
+  <p class="meta"><strong>Artifact:</strong> MongoDB Integration with Environment Toggle</p>
+
+  <p>
+    This enhancement extends the original dashboard by integrating a MongoDB NoSQL database
+    as an alternative data source to the original CSV-based implementation. A dedicated
+    database access layer encapsulates CRUD operations and remains fully decoupled from
+    the user interface.
+  </p>
+
+  <ul>
+    <li><strong>Database Layer:</strong> Implemented MongoDB connection and CRUD abstraction</li>
+    <li><strong>Configuration Control:</strong> Environment-driven data source selection</li>
+    <li><strong>Security Awareness:</strong> Removed hardcoded credentials and centralized configuration</li>
+    <li><strong>Scalability:</strong> Application now supports dynamic backend data retrieval</li>
+  </ul>
+
+  <h3>Database Evidence</h3>
+
+  <p><strong>Mongo Enabled Application Startup</strong></p>
+  <img src="Mongo enabled dashboard startup.png"
+       alt="Mongo Enabled Startup"
+       style="width:100%; max-width:900px; border-radius:6px; margin-bottom:20px;">
+
+  <p><strong>MongoDB Compass – Animals Collection</strong></p>
+  <img src="MongoDB utilized for dashboard.png"
+       alt="MongoDB Compass Animals Collection"
+       style="width:100%; max-width:900px; border-radius:6px; margin-bottom:20px;">
+
+  <p><strong>Dashboard Using MongoDB Data</strong></p>
+  <img src="working dashboard using MongoDB.png"
+       alt="Dashboard Using MongoDB"
+       style="width:100%; max-width:900px; border-radius:6px;">
+</section>
+
 
 <section>
   <h2>Contact</h2>
