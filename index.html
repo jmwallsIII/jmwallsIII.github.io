@@ -8,6 +8,7 @@
       font-family: Arial, sans-serif;
       margin: 40px;
       background-color: #eef1f4;
+      line-height: 1.5;
     }
     header {
       text-align: center;
@@ -23,6 +24,20 @@
       color: #0366d6;
       text-decoration: none;
     }
+    a:hover { text-decoration: underline; }
+
+    /* Added because you're using these classes */
+    .muted { color: #566; }
+    .tag {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #e9eef5;
+      font-size: 12px;
+      vertical-align: middle;
+    }
+    .meta { color: #566; font-size: 14px; margin-top: 6px; }
   </style>
 </head>
 <body>
@@ -35,21 +50,21 @@
 <section>
   <h2>Professional Self-Introduction</h2>
   <p>
-  I am a Computer Science student with experience in software development,
-  data analysis, and system design.  This ePortfolio highlights selected
-  artifacts and enhancements that demonstrate my ability to design,
-  implement, and improve software solutions using industry-standard
-  practices.  These projects reflect my growth throughout the Computer
-  Science program at SNHU and support my preparation for professional
-  software development roles.
-</p>
+    I am a Computer Science student with experience in software development,
+    data analysis, and system design. This ePortfolio highlights selected
+    artifacts and enhancements that demonstrate my ability to design,
+    implement, and improve software solutions using industry-standard
+    practices. These projects reflect my growth throughout the Computer
+    Science program at SNHU and support my preparation for professional
+    software development roles.
+  </p>
 </section>
 
 <section>
   <h2>Projects & Artifacts</h2>
   <ul>
     <li>
-       <strong>CS-340: Client/Server Development (CLI)</strong> –
+      <strong>CS-340: Client/Server Development (CLI)</strong> –
       <a href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV" target="_blank" rel="noopener">
         View Repository
       </a>
@@ -57,7 +72,8 @@
     <li>
       <strong>CS-300: Data Structures & Algorithms</strong> –
       <a href="https://github.com/jmwallsIII/CS-300-DSA" target="_blank" rel="noopener">
-        View Repository</a>
+        View Repository
+      </a>
     </li>
   </ul>
 </section>
@@ -78,12 +94,40 @@
   </p>
 </section>
 
+<!-- Replace placeholder with Enhancement One (what the instructor needs to see) -->
 <section>
-  <h2>Enhancements</h2>
+  <h2>Enhancement One: Software Design &amp; Engineering <span class="tag">CS 499</span></h2>
+  <p class="meta"><strong>Artifact:</strong> CS 340 Enhanced Dashboard (Python + Dash)</p>
+
   <p>
-    This section documents the improvements made to selected artifacts,  <!-- Add actual enhancements list later/This is a placeholder -->
-    focusing on software engineering practices, algorithms, and data
-    structures.
+    This enhancement refactors my original CS 340 dashboard application into a modular, layered architecture.
+    Data access logic was isolated into a dedicated module, configuration and environment-specific settings were
+    centralized, and user interface layout and callback logic were separated into clearly defined components.
+    These changes improved readability, reduced coupling, and made the application easier to maintain and extend.
+  </p>
+
+  <ul>
+    <li><strong>Architecture:</strong> separated UI, configuration, and data-access layers</li>
+    <li><strong>Maintainability:</strong> improved organization for easier updates and testing</li>
+    <li><strong>Security mindset:</strong> removed hardcoded values and improved configuration handling</li>
+  </ul>
+
+  <p>
+    <strong>Enhanced Repository:</strong>
+    <a href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV" target="_blank" rel="noopener">
+      View Enhancement One Code
+    </a>
+  </p>
+
+  <p>
+    <strong>Narrative:</strong>
+    <a href="CS%20499%20Enhancement%20One%20Narrative.docx" target="_blank" rel="noopener">
+      CS 499 Enhancement One Narrative (DOCX)
+    </a>
+  </p>
+
+  <p class="muted">
+    Note: Screenshots are included with the submission to demonstrate successful execution and enhancements.
   </p>
 </section>
 
@@ -92,7 +136,8 @@
   <p>
     GitHub:
     <a href="https://github.com/jmwallsIII" target="_blank" rel="noopener">
-      github.com/jmwallsIII</a>
+      github.com/jmwallsIII
+    </a>
   </p>
 </section>
 
