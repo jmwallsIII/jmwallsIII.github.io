@@ -45,6 +45,7 @@
 
     h3 {
       margin-top: 24px;
+      margin-bottom: 8px;
     }
 
     a {
@@ -61,24 +62,14 @@
       max-width: 1000px;
       height: auto;
       border-radius: 6px;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-
-    .tag {
-      display: inline-block;
-      margin-left: 8px;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: #e9eef5;
-      font-size: 12px;
-      vertical-align: middle;
+      margin-top: 12px;
+      margin-bottom: 16px;
     }
 
     .meta {
       color: #566;
       font-size: 14px;
-      margin-top: 6px;
+      margin-top: 4px;
     }
 
     .skills {
@@ -98,8 +89,20 @@
 
     .project-link {
       display: inline-block;
-      margin-top: 5px;
+      margin-top: 6px;
       font-weight: bold;
+    }
+
+    .capstone-project {
+      border-top: 1px solid #dfe3e8;
+      padding-top: 18px;
+      margin-top: 22px;
+    }
+
+    .documentation-links a {
+      margin-right: 14px;
+      display: inline-block;
+      margin-bottom: 8px;
     }
 
     footer {
@@ -138,14 +141,15 @@
 <!-- PROFESSIONAL PROFILE -->
 
 <section>
+
   <h2>Professional Profile</h2>
 
   <p>
-    Computer Science professional focused on data analytics, business
-    intelligence, and operational performance. My projects combine data
-    analysis, dashboard development, database integration, and software
-    development to transform data into useful reporting, visualizations,
-    and decision-support tools.
+    Computer Science background focused on data analytics, business intelligence,
+    and operational performance. My technical experience includes dashboard
+    development, data visualization, database integration, and software development,
+    with an emphasis on using technology and data to solve practical problems and
+    support informed decision-making.
   </p>
 
   <div class="skills">
@@ -160,13 +164,15 @@
     <span class="skill">C++</span>
     <span class="skill">Data Visualization</span>
   </div>
+
 </section>
 
 
-<!-- DATA ANALYTICS PORTFOLIO -->
+<!-- DATA ANALYTICS PROJECT -->
 
 <section>
-  <h2>Data Analytics & Business Intelligence Projects</h2>
+
+  <h2>Data Analytics & Business Intelligence</h2>
 
   <h3>Manufacturing Performance Dashboard</h3>
 
@@ -178,28 +184,27 @@
     Developed an interactive Power BI dashboard to analyze manufacturing
     operations data across processing time, energy consumption, machine
     availability, job status, and processing trends. The dashboard provides
-    a high-level view of operational performance while allowing users to
-    interactively filter results by machine, operation type, and job status.
+    a high-level view of operational performance and allows users to filter
+    results by machine, operation type, and job status.
   </p>
 
   <ul>
     <li>
-      Created KPI measures for total jobs, average processing time,
+      Created DAX measures for total jobs, average processing time,
       average energy consumption, and average machine availability.
     </li>
 
     <li>
-      Built interactive slicers that dynamically update dashboard
-      metrics and visualizations.
+      Built KPI cards that dynamically respond to dashboard filters.
     </li>
 
     <li>
-      Compared processing performance across manufacturing machines
-      and operation types.
+      Added interactive slicers for machine, operation type, and job status.
     </li>
 
     <li>
-      Visualized job status distribution and processing-time trends.
+      Visualized machine performance, energy consumption, job status,
+      and processing-time trends.
     </li>
   </ul>
 
@@ -216,478 +221,206 @@
   <img
     src="manufacturing_dashboard.png"
     alt="Manufacturing Performance Dashboard">
-</section>
 
-
-<!-- PYTHON AND DATABASE ANALYTICS -->
-
-<section>
-  <h2>Python & Database Analytics</h2>
-
-  <h3>Interactive Dashboard with MongoDB</h3>
-
-  <p class="meta">
-    <strong>Tools:</strong> Python, Dash, MongoDB
-  </p>
-
-  <p>
-    Developed and enhanced an interactive Python Dash application with
-    MongoDB integration, dynamic data retrieval, CRUD functionality, and
-    dashboard components. The application separates data access,
-    configuration, and user-interface functionality to improve
-    maintainability and support multiple data sources.
-  </p>
-
-  <ul>
-    <li>Integrated MongoDB as a backend data source.</li>
-
-    <li>
-      Implemented CRUD functionality through a dedicated data-access layer.
-    </li>
-
-    <li>
-      Supported dynamic backend data retrieval for dashboard functionality.
-    </li>
-
-    <li>
-      Separated user interface, configuration, and database components.
-    </li>
-  </ul>
-
-  <p>
-    <a
-      class="project-link"
-      href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
-      target="_blank"
-      rel="noopener">
-      View Python & MongoDB Dashboard Repository
-    </a>
-  </p>
-
-  <p><strong>Dashboard Running Locally</strong></p>
-
-  <img
-    src="Main_powershell_dash.png"
-    alt="Python Dash Application Running Locally">
-
-  <p><strong>MongoDB Data Source</strong></p>
-
-  <img
-    src="MongoDB utilized for dashboard.png"
-    alt="MongoDB Compass Animals Collection">
-
-  <p><strong>Dashboard Using MongoDB Data</strong></p>
-
-  <img
-    src="working dashboard using MongoDB.png"
-    alt="Dashboard Using MongoDB Data">
-</section>
-
-
-<!-- COMPUTER SCIENCE PROJECTS -->
-
-<section>
-  <h2>Computer Science Projects</h2>
-
-  <h3>CS 300 – Data Structures & Algorithms</h3>
-
-  <p>
-    Enhanced a C++ advising application by modeling course prerequisites
-    as a directed graph and implementing depth-first search to compute
-    ordered prerequisite chains. The application also includes cycle
-    detection and prerequisite validation.
-  </p>
-
-  <ul>
-    <li>
-      Hash-table lookup using <code>std::unordered_map</code>
-    </li>
-
-    <li>
-      Directed graph representation using adjacency lists
-    </li>
-
-    <li>
-      Depth-first search traversal
-    </li>
-
-    <li>
-      Cycle detection and prerequisite validation
-    </li>
-
-    <li>
-      O(V + E) graph traversal complexity
-    </li>
-  </ul>
-
-  <p>
-    <a
-      class="project-link"
-      href="https://github.com/jmwallsIII/CS-300-DSA"
-      target="_blank"
-      rel="noopener">
-      View Data Structures & Algorithms Repository
-    </a>
-  </p>
-
-  <p><strong>Core Data Structures</strong></p>
-
-  <img
-    src="CS 300 Code Structures.png"
-    alt="CS 300 Data Structures">
-
-  <p><strong>Depth-First Search with Cycle Detection</strong></p>
-
-  <img
-    src="CS 300 DFS.png"
-    alt="CS 300 DFS Implementation">
-
-  <p><strong>Working Console Output</strong></p>
-
-  <img
-    src="Working Console Shot.png"
-    alt="CS 300 Working Console Output">
 </section>
 
 
 <!-- CS 499 CAPSTONE -->
 
 <section>
+
   <h2>CS 499 Computer Science Capstone</h2>
 
   <p>
-    My CS 499 capstone demonstrates the progression of selected computer
-    science projects through structured enhancements in software design
-    and engineering, algorithms and data structures, and database
-    integration.
+    My CS 499 capstone enhanced previous Computer Science projects across
+    three areas: software design and engineering, algorithms and data
+    structures, and database integration. The enhancements focused on
+    improving maintainability, system architecture, algorithmic capability,
+    security awareness, and data management.
   </p>
 
-  <p>
-    The capstone artifacts demonstrate experience evaluating existing
-    systems, implementing technical improvements, analyzing performance
-    considerations, and applying maintainable and security-aware design
-    practices.
-  </p>
-</section>
-
-
-<!-- PROFESSIONAL SELF-ASSESSMENT -->
-
-<section>
-  <h2>
-    Professional Self-Assessment
-    <span class="tag">CS 499</span>
-  </h2>
-
-  <p>
-    Completing the Computer Science program and developing this ePortfolio
-    strengthened both my technical expertise and professional perspective.
-    Throughout the program, I progressed from writing functional code to
-    designing scalable, maintainable, and secure computing solutions aligned
-    with industry standards.
-  </p>
-
-  <p>
-    Across software engineering, algorithms, and database integration, I
-    demonstrated the ability to evaluate existing systems, apply structured
-    enhancements, analyze performance trade-offs, and implement
-    security-aware design practices. These artifacts reflect my growth in
-    system architecture, algorithmic thinking, data modeling, and
-    professional communication.
-  </p>
-
-  <p>
-    <strong>Full Professional Self-Assessment:</strong>
-
-    <a
-      href="CS%20499%20Professional%20Self_assessment.docx"
-      target="_blank"
-      rel="noopener">
-      View Self-Assessment (DOCX)
-    </a>
-  </p>
-</section>
-
-
-<!-- CODE REVIEW -->
-
-<section>
-  <h2>
-    Code Review
-    <span class="tag">CS 499</span>
-  </h2>
-
-  <p>
-    This comprehensive code review covers the selected artifacts used for
-    my CS 499 capstone. It reviews existing functionality, identifies areas
-    for improvement, and outlines enhancements across software engineering
-    and design, algorithms and data structures, and databases.
-  </p>
-
-  <p>
-    <strong>Watch the video:</strong>
-
-    <a
-      href="https://youtu.be/KVd8opjzw4E"
-      target="_blank"
-      rel="noopener">
-      CS 499 Capstone Code Review – ePortfolio Artifacts
-    </a>
-  </p>
-</section>
-
-
-<!-- ENHANCEMENT ONE -->
-
-<section>
-  <h2>
-    Enhancement One: Software Design & Engineering
-    <span class="tag">CS 499</span>
-  </h2>
-
-  <p class="meta">
-    <strong>Artifact:</strong>
-    CS 340 Enhanced Dashboard (Python + Dash)
-  </p>
-
-  <p>
-    This enhancement refactored my original CS 340 dashboard application
-    into a modular, layered architecture. Data-access logic was isolated
-    into a dedicated module, configuration and environment-specific
-    settings were centralized, and user-interface layout and callback
-    logic were separated into clearly defined components.
-  </p>
-
-  <ul>
-    <li>
-      <strong>Architecture:</strong>
-      Separated UI, configuration, and data-access layers
-    </li>
-
-    <li>
-      <strong>Maintainability:</strong>
-      Improved organization for easier updates and testing
-    </li>
-
-    <li>
-      <strong>Security mindset:</strong>
-      Removed hardcoded values and improved configuration handling
-    </li>
-  </ul>
-
-  <p>
-    <strong>Enhanced Repository:</strong>
-
-    <a
-      href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
-      target="_blank"
-      rel="noopener">
-      View Enhancement One Code
-    </a>
-  </p>
-
-  <p>
-    <strong>Narrative:</strong>
-
-    <a
-      href="CS%20499%20Enhancement%20One%20Narrative.docx"
-      target="_blank"
-      rel="noopener">
-      CS 499 Enhancement One Narrative (DOCX)
-    </a>
-  </p>
-
-  <h3>Application Execution Evidence</h3>
-
-  <p><strong>Dashboard Running (Local Execution)</strong></p>
-
-  <img
-    src="Main_powershell_dash.png"
-    alt="Dashboard Running Locally">
-</section>
-
-
-<!-- ENHANCEMENT TWO -->
-
-<section>
-  <h2>
-    Enhancement Two: Algorithms & Data Structures
-    <span class="tag">CS 499</span>
-  </h2>
-
-  <p class="meta">
-    <strong>Artifact:</strong>
-    CS 300 – ABCU Advising Assistant (C++)
-  </p>
-
-  <p>
-    This enhancement extends the original CS 300 advising assistant by
-    modeling course prerequisites as a directed graph and implementing a
-    depth-first search traversal algorithm to compute a full ordered
-    prerequisite chain. The system detects cyclic dependencies and validates
-    prerequisite integrity, improving correctness and robustness.
-  </p>
-
-  <ul>
-    <li>
-      <strong>Hash Table:</strong>
-      O(1) average-case lookup using <code>std::unordered_map</code>
-    </li>
-
-    <li>
-      <strong>Graph Representation:</strong>
-      Adjacency list for prerequisite modeling
-    </li>
-
-    <li>
-      <strong>DFS Traversal:</strong>
-      Computes ordered prerequisite chains
-    </li>
-
-    <li>
-      <strong>Cycle Detection:</strong>
-      Prevents infinite recursion and validates data integrity
-    </li>
-
-    <li>
-      <strong>Performance:</strong>
-      O(V + E) traversal complexity
-    </li>
-  </ul>
-
-  <p>
-    <strong>Enhanced Repository:</strong>
-
-    <a
-      href="https://github.com/jmwallsIII/CS-300-DSA"
-      target="_blank"
-      rel="noopener">
-      View Enhancement Two Code
-    </a>
-  </p>
-
-  <p>
-    <strong>Narrative:</strong>
-
-    <a
-      href="CS%20499%20Enhancement%20Two%20Narrative.docx"
-      target="_blank"
-      rel="noopener">
-      CS 499 Enhancement Two Narrative (DOCX)
-    </a>
-  </p>
-
-  <h3>Algorithm & Execution Evidence</h3>
-
-  <p><strong>Core Data Structures (Hash Table & Graph)</strong></p>
-
-  <img
-    src="CS 300 Code Structures.png"
-    alt="CS 300 Data Structures">
-
-  <p><strong>Depth-First Search (DFS) with Cycle Detection</strong></p>
-
-  <img
-    src="CS 300 DFS.png"
-    alt="CS 300 DFS Implementation">
-
-  <p><strong>Working Console Output – Full Prerequisite Chain</strong></p>
-
-  <img
-    src="Working Console Shot.png"
-    alt="CS 300 Working Console">
-</section>
-
-
-<!-- ENHANCEMENT THREE -->
-
-<section>
-  <h2>
-    Enhancement Three: Database Integration
-    <span class="tag">CS 499</span>
-  </h2>
-
-  <p class="meta">
-    <strong>Artifact:</strong>
-    CS 340 Enhanced Dashboard (Python + Dash) + MongoDB Integration
-  </p>
-
-  <p>
-    This enhancement extends the original dashboard by integrating a
-    MongoDB NoSQL database as an alternative data source to the original
-    CSV-based implementation. A dedicated database-access layer encapsulates
-    CRUD operations and remains decoupled from the user interface.
-  </p>
-
-  <ul>
-    <li>
-      <strong>Database Layer:</strong>
-      Implemented MongoDB connection and CRUD abstraction
-    </li>
-
-    <li>
-      <strong>Configuration Control:</strong>
-      Environment-driven data-source selection
-    </li>
-
-    <li>
-      <strong>Security Awareness:</strong>
-      Removed hardcoded credentials and centralized configuration
-    </li>
-
-    <li>
-      <strong>Scalability:</strong>
-      Application supports dynamic backend data retrieval
-    </li>
-  </ul>
-
-  <p>
-    <strong>Enhanced Repository:</strong>
-
-    <a
-      href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
-      target="_blank"
-      rel="noopener">
-      View Enhancement Three Code
-    </a>
-  </p>
-
-  <p>
-    <strong>Narrative:</strong>
-
-    <a
-      href="CS%20499%20Enhancement%20Three%20Narrative.docx"
-      target="_blank"
-      rel="noopener">
-      CS 499 Enhancement Three Narrative (DOCX)
-    </a>
-  </p>
-
-  <h3>Database Evidence</h3>
-
-  <p><strong>Mongo Enabled Application Startup</strong></p>
-
-  <img
-    src="Mongo enabled dashboard startup.png"
-    alt="Mongo Enabled Dashboard Startup">
-
-  <p><strong>MongoDB Compass – Animals Collection</strong></p>
-
-  <img
-    src="MongoDB utilized for dashboard.png"
-    alt="MongoDB Compass Animals Collection">
-
-  <p><strong>Dashboard Using MongoDB Data</strong></p>
-
-  <img
-    src="working dashboard using MongoDB.png"
-    alt="Dashboard Using MongoDB">
+
+  <!-- ENHANCEMENT ONE -->
+
+  <div class="capstone-project">
+
+    <h3>Software Design & Engineering</h3>
+
+    <p class="meta">
+      <strong>Artifact:</strong> Python Dash Application
+    </p>
+
+    <p>
+      Refactored an existing Python Dash application into a more modular,
+      layered architecture. Data-access logic, configuration settings,
+      user-interface components, and callback functionality were separated
+      to improve maintainability and reduce coupling.
+    </p>
+
+    <ul>
+      <li>Separated UI, configuration, and data-access components</li>
+      <li>Improved application organization and maintainability</li>
+      <li>Removed hardcoded configuration values</li>
+      <li>Applied security-aware configuration practices</li>
+    </ul>
+
+    <p>
+      <a
+        class="project-link"
+        href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
+        target="_blank"
+        rel="noopener">
+        View Python Dash Repository
+      </a>
+    </p>
+
+  </div>
+
+
+  <!-- ENHANCEMENT TWO -->
+
+  <div class="capstone-project">
+
+    <h3>Algorithms & Data Structures</h3>
+
+    <p class="meta">
+      <strong>Artifact:</strong> C++ Advising Assistant
+    </p>
+
+    <p>
+      Enhanced a C++ advising application by modeling course prerequisites
+      as a directed graph and implementing depth-first search to calculate
+      complete prerequisite chains. The application also detects cyclic
+      dependencies and validates prerequisite relationships.
+    </p>
+
+    <ul>
+      <li>Hash-table lookup using <code>std::unordered_map</code></li>
+      <li>Directed graph representation using adjacency lists</li>
+      <li>Depth-first search traversal</li>
+      <li>Cycle detection and prerequisite validation</li>
+      <li>O(V + E) graph traversal complexity</li>
+    </ul>
+
+    <p>
+      <a
+        class="project-link"
+        href="https://github.com/jmwallsIII/CS-300-DSA"
+        target="_blank"
+        rel="noopener">
+        View Data Structures & Algorithms Repository
+      </a>
+    </p>
+
+    <img
+      src="Working Console Shot.png"
+      alt="C++ Advising Assistant Console Output">
+
+  </div>
+
+
+  <!-- ENHANCEMENT THREE -->
+
+  <div class="capstone-project">
+
+    <h3>Database Integration</h3>
+
+    <p class="meta">
+      <strong>Artifact:</strong> Python Dash Application with MongoDB
+    </p>
+
+    <p>
+      Extended the Python Dash application by integrating MongoDB as an
+      alternative data source to the original CSV implementation. A dedicated
+      data-access layer encapsulates CRUD operations and keeps database logic
+      separate from the user interface.
+    </p>
+
+    <ul>
+      <li>Integrated MongoDB as a NoSQL backend</li>
+      <li>Implemented CRUD functionality through a dedicated data layer</li>
+      <li>Added environment-driven data-source selection</li>
+      <li>Removed hardcoded database credentials</li>
+      <li>Supported dynamic backend data retrieval</li>
+    </ul>
+
+    <p>
+      <a
+        class="project-link"
+        href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
+        target="_blank"
+        rel="noopener">
+        View Python & MongoDB Repository
+      </a>
+    </p>
+
+    <img
+      src="working dashboard using MongoDB.png"
+      alt="Python Dash Application Using MongoDB">
+
+  </div>
+
+
+  <!-- CAPSTONE DOCUMENTATION -->
+
+  <div class="capstone-project">
+
+    <h3>Capstone Documentation</h3>
+
+    <p>
+      Supporting documentation provides additional detail about the
+      development process, technical enhancements, and reflection on the
+      Computer Science program outcomes.
+    </p>
+
+    <div class="documentation-links">
+
+      <a
+        href="CS%20499%20Professional%20Self_assessment.docx"
+        target="_blank"
+        rel="noopener">
+        Professional Self-Assessment
+      </a>
+
+      <a
+        href="https://youtu.be/KVd8opjzw4E"
+        target="_blank"
+        rel="noopener">
+        Code Review Video
+      </a>
+
+      <a
+        href="CS%20499%20Enhancement%20One%20Narrative.docx"
+        target="_blank"
+        rel="noopener">
+        Enhancement One Narrative
+      </a>
+
+      <a
+        href="CS%20499%20Enhancement%20Two%20Narrative.docx"
+        target="_blank"
+        rel="noopener">
+        Enhancement Two Narrative
+      </a>
+
+      <a
+        href="CS%20499%20Enhancement%20Three%20Narrative.docx"
+        target="_blank"
+        rel="noopener">
+        Enhancement Three Narrative
+      </a>
+
+    </div>
+
+  </div>
+
 </section>
 
 
 <!-- CONTACT -->
 
 <section>
+
   <h2>Contact</h2>
 
   <p>
@@ -716,6 +449,7 @@
       github.com/jmwallsIII
     </a>
   </p>
+
 </section>
 
 
