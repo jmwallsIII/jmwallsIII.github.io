@@ -1,33 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <title>John Walls III | Computer Science ePortfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>John Walls III | Data Analytics & Computer Science Portfolio</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
       margin: 40px;
       background-color: #eef1f4;
       line-height: 1.5;
+      color: #222;
     }
+
     header {
       text-align: center;
-      padding-bottom: 20px;
+      padding: 20px 0 30px 0;
     }
+
+    header h1 {
+      margin-bottom: 8px;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 0;
+      color: #566;
+      font-size: 19px;
+    }
+
     section {
       background: #ffffff;
-      padding: 20px;
+      padding: 24px;
       margin-bottom: 20px;
       border-radius: 8px;
     }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    h3 {
+      margin-top: 24px;
+    }
+
     a {
       color: #0366d6;
       text-decoration: none;
     }
-    a:hover { text-decoration: underline; }
 
-    /* Added because you're using these classes */
-    .muted { color: #566; }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    img {
+      width: 100%;
+      max-width: 1000px;
+      height: auto;
+      border-radius: 6px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
     .tag {
       display: inline-block;
       margin-left: 8px;
@@ -37,118 +74,425 @@
       font-size: 12px;
       vertical-align: middle;
     }
-    .meta { color: #566; font-size: 14px; margin-top: 6px; }
+
+    .meta {
+      color: #566;
+      font-size: 14px;
+      margin-top: 6px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .skill {
+      display: inline-block;
+      background: #e9eef5;
+      padding: 5px 10px;
+      border-radius: 999px;
+      font-size: 13px;
+    }
+
+    .project-link {
+      display: inline-block;
+      margin-top: 5px;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      color: #566;
+      padding: 10px 0 30px 0;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        margin: 15px;
+      }
+
+      header h1 {
+        font-size: 30px;
+      }
+
+      section {
+        padding: 18px;
+      }
+    }
   </style>
 </head>
+
 <body>
+
+<!-- HEADER -->
 
 <header>
   <h1>John Walls III</h1>
-  <p>Computer Science Student | Software Development</p>
+  <p>Data Analytics | Business Intelligence | Computer Science</p>
 </header>
 
-  <section>
-  <h2>Professional Self-Assessment <span class="tag">CS 499</span></h2>
+
+<!-- PROFESSIONAL PROFILE -->
+
+<section>
+  <h2>Professional Profile</h2>
 
   <p>
-    Completing the Computer Science program and developing this ePortfolio strengthened both my technical
-    expertise and my professional perspective. Throughout the program, I progressed from writing functional
-    code to designing scalable, maintainable, and secure computing solutions aligned with industry standards.
+    Computer Science professional focused on data analytics, business
+    intelligence, and operational performance. My projects combine data
+    analysis, dashboard development, database integration, and software
+    development to transform data into useful reporting, visualizations,
+    and decision-support tools.
+  </p>
+
+  <div class="skills">
+    <span class="skill">Power BI</span>
+    <span class="skill">DAX</span>
+    <span class="skill">Python</span>
+    <span class="skill">pandas</span>
+    <span class="skill">SQL</span>
+    <span class="skill">MongoDB</span>
+    <span class="skill">Dash</span>
+    <span class="skill">Excel</span>
+    <span class="skill">C++</span>
+    <span class="skill">Data Visualization</span>
+  </div>
+</section>
+
+
+<!-- DATA ANALYTICS PORTFOLIO -->
+
+<section>
+  <h2>Data Analytics & Business Intelligence Projects</h2>
+
+  <h3>Manufacturing Performance Dashboard</h3>
+
+  <p class="meta">
+    <strong>Tools:</strong> Power BI, DAX, Data Visualization
   </p>
 
   <p>
-    Across software engineering, algorithms, and database integration, I demonstrated the ability to evaluate
-    existing systems, apply structured enhancements, analyze performance trade-offs, and implement
-    security-aware design practices. These artifacts collectively reflect my growth in system architecture,
-    algorithmic thinking, data modeling, and professional communication.
+    Developed an interactive Power BI dashboard to analyze manufacturing
+    operations data across processing time, energy consumption, machine
+    availability, job status, and processing trends. The dashboard provides
+    a high-level view of operational performance while allowing users to
+    interactively filter results by machine, operation type, and job status.
+  </p>
+
+  <ul>
+    <li>
+      Created KPI measures for total jobs, average processing time,
+      average energy consumption, and average machine availability.
+    </li>
+
+    <li>
+      Built interactive slicers that dynamically update dashboard
+      metrics and visualizations.
+    </li>
+
+    <li>
+      Compared processing performance across manufacturing machines
+      and operation types.
+    </li>
+
+    <li>
+      Visualized job status distribution and processing-time trends.
+    </li>
+  </ul>
+
+  <p>
+    <a
+      class="project-link"
+      href="https://github.com/jmwallsIII/Manufacturing-Performance-Dashboard"
+      target="_blank"
+      rel="noopener">
+      View Manufacturing Performance Dashboard Repository
+    </a>
+  </p>
+
+  <img
+    src="manufacturing_dashboard.png"
+    alt="Manufacturing Performance Dashboard">
+</section>
+
+
+<!-- PYTHON AND DATABASE ANALYTICS -->
+
+<section>
+  <h2>Python & Database Analytics</h2>
+
+  <h3>Interactive Dashboard with MongoDB</h3>
+
+  <p class="meta">
+    <strong>Tools:</strong> Python, Dash, MongoDB
+  </p>
+
+  <p>
+    Developed and enhanced an interactive Python Dash application with
+    MongoDB integration, dynamic data retrieval, CRUD functionality, and
+    dashboard components. The application separates data access,
+    configuration, and user-interface functionality to improve
+    maintainability and support multiple data sources.
+  </p>
+
+  <ul>
+    <li>Integrated MongoDB as a backend data source.</li>
+
+    <li>
+      Implemented CRUD functionality through a dedicated data-access layer.
+    </li>
+
+    <li>
+      Supported dynamic backend data retrieval for dashboard functionality.
+    </li>
+
+    <li>
+      Separated user interface, configuration, and database components.
+    </li>
+  </ul>
+
+  <p>
+    <a
+      class="project-link"
+      href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
+      target="_blank"
+      rel="noopener">
+      View Python & MongoDB Dashboard Repository
+    </a>
+  </p>
+
+  <p><strong>Dashboard Running Locally</strong></p>
+
+  <img
+    src="Main_powershell_dash.png"
+    alt="Python Dash Application Running Locally">
+
+  <p><strong>MongoDB Data Source</strong></p>
+
+  <img
+    src="MongoDB utilized for dashboard.png"
+    alt="MongoDB Compass Animals Collection">
+
+  <p><strong>Dashboard Using MongoDB Data</strong></p>
+
+  <img
+    src="working dashboard using MongoDB.png"
+    alt="Dashboard Using MongoDB Data">
+</section>
+
+
+<!-- COMPUTER SCIENCE PROJECTS -->
+
+<section>
+  <h2>Computer Science Projects</h2>
+
+  <h3>CS 300 – Data Structures & Algorithms</h3>
+
+  <p>
+    Enhanced a C++ advising application by modeling course prerequisites
+    as a directed graph and implementing depth-first search to compute
+    ordered prerequisite chains. The application also includes cycle
+    detection and prerequisite validation.
+  </p>
+
+  <ul>
+    <li>
+      Hash-table lookup using <code>std::unordered_map</code>
+    </li>
+
+    <li>
+      Directed graph representation using adjacency lists
+    </li>
+
+    <li>
+      Depth-first search traversal
+    </li>
+
+    <li>
+      Cycle detection and prerequisite validation
+    </li>
+
+    <li>
+      O(V + E) graph traversal complexity
+    </li>
+  </ul>
+
+  <p>
+    <a
+      class="project-link"
+      href="https://github.com/jmwallsIII/CS-300-DSA"
+      target="_blank"
+      rel="noopener">
+      View Data Structures & Algorithms Repository
+    </a>
+  </p>
+
+  <p><strong>Core Data Structures</strong></p>
+
+  <img
+    src="CS 300 Code Structures.png"
+    alt="CS 300 Data Structures">
+
+  <p><strong>Depth-First Search with Cycle Detection</strong></p>
+
+  <img
+    src="CS 300 DFS.png"
+    alt="CS 300 DFS Implementation">
+
+  <p><strong>Working Console Output</strong></p>
+
+  <img
+    src="Working Console Shot.png"
+    alt="CS 300 Working Console Output">
+</section>
+
+
+<!-- CS 499 CAPSTONE -->
+
+<section>
+  <h2>CS 499 Computer Science Capstone</h2>
+
+  <p>
+    My CS 499 capstone demonstrates the progression of selected computer
+    science projects through structured enhancements in software design
+    and engineering, algorithms and data structures, and database
+    integration.
+  </p>
+
+  <p>
+    The capstone artifacts demonstrate experience evaluating existing
+    systems, implementing technical improvements, analyzing performance
+    considerations, and applying maintainable and security-aware design
+    practices.
+  </p>
+</section>
+
+
+<!-- PROFESSIONAL SELF-ASSESSMENT -->
+
+<section>
+  <h2>
+    Professional Self-Assessment
+    <span class="tag">CS 499</span>
+  </h2>
+
+  <p>
+    Completing the Computer Science program and developing this ePortfolio
+    strengthened both my technical expertise and professional perspective.
+    Throughout the program, I progressed from writing functional code to
+    designing scalable, maintainable, and secure computing solutions aligned
+    with industry standards.
+  </p>
+
+  <p>
+    Across software engineering, algorithms, and database integration, I
+    demonstrated the ability to evaluate existing systems, apply structured
+    enhancements, analyze performance trade-offs, and implement
+    security-aware design practices. These artifacts reflect my growth in
+    system architecture, algorithmic thinking, data modeling, and
+    professional communication.
   </p>
 
   <p>
     <strong>Full Professional Self-Assessment:</strong>
-    <a href="CS%20499%20Professional%20Self_assessment.docx" target="_blank" rel="noopener">
+
+    <a
+      href="CS%20499%20Professional%20Self_assessment.docx"
+      target="_blank"
+      rel="noopener">
       View Self-Assessment (DOCX)
     </a>
   </p>
-
-  <p class="muted">
-    The full self-assessment document provides a detailed reflection aligned with the five CS 499 course outcomes.
-  </p>
 </section>
 
+
+<!-- CODE REVIEW -->
+
 <section>
-  <h2>Professional Self-Introduction</h2>
+  <h2>
+    Code Review
+    <span class="tag">CS 499</span>
+  </h2>
+
   <p>
-    I am a Computer Science student with experience in software development,
-    data analysis, and system design. This ePortfolio highlights selected
-    artifacts and enhancements that demonstrate my ability to design,
-    implement, and improve software solutions using industry-standard
-    practices. These projects reflect my growth throughout the Computer
-    Science program at SNHU and support my preparation for professional
-    software development roles.
+    This comprehensive code review covers the selected artifacts used for
+    my CS 499 capstone. It reviews existing functionality, identifies areas
+    for improvement, and outlines enhancements across software engineering
+    and design, algorithms and data structures, and databases.
   </p>
-</section>
 
-<section>
-  <h2>Projects & Artifacts</h2>
-  <ul>
-    <li>
-      <strong>CS-340: Client/Server Development (CLI)</strong> –
-      <a href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV" target="_blank" rel="noopener">
-        View Repository
-      </a>
-    </li>
-    <li>
-      <strong>CS-300: Data Structures & Algorithms</strong> –
-      <a href="https://github.com/jmwallsIII/CS-300-DSA" target="_blank" rel="noopener">
-        View Repository
-      </a>
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h2>Code Review <span class="tag">CS 499</span></h2>
-  <p class="muted">
-    This comprehensive code review covers all selected artifacts for my CS 499 Capstone ePortfolio.
-    It reviews existing functionality, identifies areas for improvement, and outlines planned enhancements
-    across software engineering and design, algorithms and data structures, and databases. Instructor
-    feedback from Milestone One was incorporated to improve clarity, organization, and technical explanations.
-  </p>
   <p>
     <strong>Watch the video:</strong>
-    <a href="https://youtu.be/KVd8opjzw4E" target="_blank" rel="noopener">
+
+    <a
+      href="https://youtu.be/KVd8opjzw4E"
+      target="_blank"
+      rel="noopener">
       CS 499 Capstone Code Review – ePortfolio Artifacts
     </a>
   </p>
 </section>
 
+
+<!-- ENHANCEMENT ONE -->
+
 <section>
-  <h2>Enhancement One: Software Design &amp; Engineering <span class="tag">CS 499</span></h2>
-  <p class="meta"><strong>Artifact:</strong> CS 340 Enhanced Dashboard (Python + Dash)</p>
+  <h2>
+    Enhancement One: Software Design & Engineering
+    <span class="tag">CS 499</span>
+  </h2>
+
+  <p class="meta">
+    <strong>Artifact:</strong>
+    CS 340 Enhanced Dashboard (Python + Dash)
+  </p>
 
   <p>
-    This enhancement refactors my original CS 340 dashboard application into a modular, layered architecture.
-    Data access logic was isolated into a dedicated module, configuration and environment-specific settings were
-    centralized, and user interface layout and callback logic were separated into clearly defined components.
-    These changes improved readability, reduced coupling, and made the application easier to maintain and extend.
+    This enhancement refactored my original CS 340 dashboard application
+    into a modular, layered architecture. Data-access logic was isolated
+    into a dedicated module, configuration and environment-specific
+    settings were centralized, and user-interface layout and callback
+    logic were separated into clearly defined components.
   </p>
 
   <ul>
-    <li><strong>Architecture:</strong> separated UI, configuration, and data-access layers</li>
-    <li><strong>Maintainability:</strong> improved organization for easier updates and testing</li>
-    <li><strong>Security mindset:</strong> removed hardcoded values and improved configuration handling</li>
+    <li>
+      <strong>Architecture:</strong>
+      Separated UI, configuration, and data-access layers
+    </li>
+
+    <li>
+      <strong>Maintainability:</strong>
+      Improved organization for easier updates and testing
+    </li>
+
+    <li>
+      <strong>Security mindset:</strong>
+      Removed hardcoded values and improved configuration handling
+    </li>
   </ul>
 
   <p>
     <strong>Enhanced Repository:</strong>
-    <a href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV" target="_blank" rel="noopener">
+
+    <a
+      href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
+      target="_blank"
+      rel="noopener">
       View Enhancement One Code
     </a>
   </p>
 
   <p>
     <strong>Narrative:</strong>
-    <a href="CS%20499%20Enhancement%20One%20Narrative.docx" target="_blank" rel="noopener">
+
+    <a
+      href="CS%20499%20Enhancement%20One%20Narrative.docx"
+      target="_blank"
+      rel="noopener">
       CS 499 Enhancement One Narrative (DOCX)
     </a>
   </p>
@@ -156,42 +500,79 @@
   <h3>Application Execution Evidence</h3>
 
   <p><strong>Dashboard Running (Local Execution)</strong></p>
-  <img src="Main_powershell_dash.png"
-       alt="Dashboard Running Locally"
-       style="width:100%; max-width:900px; border-radius:6px; margin-bottom:20px;">
 
+  <img
+    src="Main_powershell_dash.png"
+    alt="Dashboard Running Locally">
 </section>
 
-  <section>
-  <h2>Enhancement Two: Algorithms & Data Structures <span class="tag">CS 499</span></h2>
-  <p class="meta"><strong>Artifact:</strong> CS 300 – ABCU Advising Assistant (C++)</p>
+
+<!-- ENHANCEMENT TWO -->
+
+<section>
+  <h2>
+    Enhancement Two: Algorithms & Data Structures
+    <span class="tag">CS 499</span>
+  </h2>
+
+  <p class="meta">
+    <strong>Artifact:</strong>
+    CS 300 – ABCU Advising Assistant (C++)
+  </p>
 
   <p>
-    This enhancement extends the original CS 300 advising assistant by modeling
-    course prerequisites as a directed graph and implementing a depth-first
-    search (DFS) traversal algorithm to compute a full ordered prerequisite chain.
-    The system now detects cyclic dependencies and validates prerequisite integrity,
-    improving both correctness and robustness.
+    This enhancement extends the original CS 300 advising assistant by
+    modeling course prerequisites as a directed graph and implementing a
+    depth-first search traversal algorithm to compute a full ordered
+    prerequisite chain. The system detects cyclic dependencies and validates
+    prerequisite integrity, improving correctness and robustness.
   </p>
 
   <ul>
-    <li><strong>Hash Table:</strong> O(1) average-case lookup using <code>std::unordered_map</code></li>
-    <li><strong>Graph Representation:</strong> Adjacency list for prerequisite modeling</li>
-    <li><strong>DFS Traversal:</strong> Computes ordered prerequisite chains</li>
-    <li><strong>Cycle Detection:</strong> Prevents infinite recursion and validates data integrity</li>
-    <li><strong>Performance:</strong> O(V + E) traversal complexity</li>
+    <li>
+      <strong>Hash Table:</strong>
+      O(1) average-case lookup using <code>std::unordered_map</code>
+    </li>
+
+    <li>
+      <strong>Graph Representation:</strong>
+      Adjacency list for prerequisite modeling
+    </li>
+
+    <li>
+      <strong>DFS Traversal:</strong>
+      Computes ordered prerequisite chains
+    </li>
+
+    <li>
+      <strong>Cycle Detection:</strong>
+      Prevents infinite recursion and validates data integrity
+    </li>
+
+    <li>
+      <strong>Performance:</strong>
+      O(V + E) traversal complexity
+    </li>
   </ul>
 
   <p>
     <strong>Enhanced Repository:</strong>
-    <a href="https://github.com/jmwallsIII/CS-300-DSA" target="_blank" rel="noopener">
+
+    <a
+      href="https://github.com/jmwallsIII/CS-300-DSA"
+      target="_blank"
+      rel="noopener">
       View Enhancement Two Code
     </a>
   </p>
 
   <p>
     <strong>Narrative:</strong>
-    <a href="CS%20499%20Enhancement%20Two%20Narrative.docx" target="_blank" rel="noopener">
+
+    <a
+      href="CS%20499%20Enhancement%20Two%20Narrative.docx"
+      target="_blank"
+      rel="noopener">
       CS 499 Enhancement Two Narrative (DOCX)
     </a>
   </p>
@@ -199,84 +580,148 @@
   <h3>Algorithm & Execution Evidence</h3>
 
   <p><strong>Core Data Structures (Hash Table & Graph)</strong></p>
-  <img src="CS 300 Code Structures.png"
-       alt="CS 300 Data Structures"
-       style="width:100%; max-width:900px; border-radius:6px; margin-bottom:20px;">
+
+  <img
+    src="CS 300 Code Structures.png"
+    alt="CS 300 Data Structures">
 
   <p><strong>Depth-First Search (DFS) with Cycle Detection</strong></p>
-  <img src="CS 300 DFS.png"
-       alt="CS 300 DFS Implementation"
-       style="width:100%; max-width:900px; border-radius:6px; margin-bottom:20px;">
+
+  <img
+    src="CS 300 DFS.png"
+    alt="CS 300 DFS Implementation">
 
   <p><strong>Working Console Output – Full Prerequisite Chain</strong></p>
-  <img src="Working Console Shot.png"
-       alt="CS 300 Working Console"
-       style="width:100%; max-width:900px; border-radius:6px;">
+
+  <img
+    src="Working Console Shot.png"
+    alt="CS 300 Working Console">
 </section>
 
+
+<!-- ENHANCEMENT THREE -->
+
 <section>
-  <h2>Enhancement Three: Database Integration <span class="tag">CS 499</span></h2>
-  <p class="meta"><strong>Artifact:</strong> CS 340 Enhanced Dashboard (Python + Dash) + MongoDB Integration with Environment Toggle</p>
+  <h2>
+    Enhancement Three: Database Integration
+    <span class="tag">CS 499</span>
+  </h2>
+
+  <p class="meta">
+    <strong>Artifact:</strong>
+    CS 340 Enhanced Dashboard (Python + Dash) + MongoDB Integration
+  </p>
 
   <p>
-    This enhancement extends the original dashboard by integrating a MongoDB NoSQL database
-    as an alternative data source to the original CSV-based implementation. A dedicated
-    database access layer encapsulates CRUD operations and remains fully decoupled from
-    the user interface.
+    This enhancement extends the original dashboard by integrating a
+    MongoDB NoSQL database as an alternative data source to the original
+    CSV-based implementation. A dedicated database-access layer encapsulates
+    CRUD operations and remains decoupled from the user interface.
   </p>
 
   <ul>
-    <li><strong>Database Layer:</strong> Implemented MongoDB connection and CRUD abstraction</li>
-    <li><strong>Configuration Control:</strong> Environment-driven data source selection</li>
-    <li><strong>Security Awareness:</strong> Removed hardcoded credentials and centralized configuration</li>
-    <li><strong>Scalability:</strong> Application now supports dynamic backend data retrieval</li>
+    <li>
+      <strong>Database Layer:</strong>
+      Implemented MongoDB connection and CRUD abstraction
+    </li>
+
+    <li>
+      <strong>Configuration Control:</strong>
+      Environment-driven data-source selection
+    </li>
+
+    <li>
+      <strong>Security Awareness:</strong>
+      Removed hardcoded credentials and centralized configuration
+    </li>
+
+    <li>
+      <strong>Scalability:</strong>
+      Application supports dynamic backend data retrieval
+    </li>
   </ul>
 
   <p>
-  <strong>Enhanced Repository:</strong>
-  <a href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
-     target="_blank" rel="noopener">
-    View Enhancement Three Code
-  </a>
-</p>
+    <strong>Enhanced Repository:</strong>
 
-<p>
-  <strong>Narrative:</strong>
-  <a href="CS%20499%20Enhancement%20Three%20Narrative.docx"
-     target="_blank" rel="noopener">
-    CS 499 Enhancement Three Narrative (DOCX)
-  </a>
-</p>
+    <a
+      href="https://github.com/jmwallsIII/CS-340-CLI-SERV-DEV"
+      target="_blank"
+      rel="noopener">
+      View Enhancement Three Code
+    </a>
+  </p>
 
+  <p>
+    <strong>Narrative:</strong>
+
+    <a
+      href="CS%20499%20Enhancement%20Three%20Narrative.docx"
+      target="_blank"
+      rel="noopener">
+      CS 499 Enhancement Three Narrative (DOCX)
+    </a>
+  </p>
 
   <h3>Database Evidence</h3>
 
   <p><strong>Mongo Enabled Application Startup</strong></p>
-  <img src="Mongo enabled dashboard startup.png"
-       alt="Mongo Enabled Startup"
-       style="width:100%; max-width:900px; border-radius:6px; margin-bottom:20px;">
+
+  <img
+    src="Mongo enabled dashboard startup.png"
+    alt="Mongo Enabled Dashboard Startup">
 
   <p><strong>MongoDB Compass – Animals Collection</strong></p>
-  <img src="MongoDB utilized for dashboard.png"
-       alt="MongoDB Compass Animals Collection"
-       style="width:100%; max-width:900px; border-radius:6px; margin-bottom:20px;">
+
+  <img
+    src="MongoDB utilized for dashboard.png"
+    alt="MongoDB Compass Animals Collection">
 
   <p><strong>Dashboard Using MongoDB Data</strong></p>
-  <img src="working dashboard using MongoDB.png"
-       alt="Dashboard Using MongoDB"
-       style="width:100%; max-width:900px; border-radius:6px;">
+
+  <img
+    src="working dashboard using MongoDB.png"
+    alt="Dashboard Using MongoDB">
 </section>
 
 
+<!-- CONTACT -->
+
 <section>
   <h2>Contact</h2>
+
   <p>
-    GitHub:
-    <a href="https://github.com/jmwallsIII" target="_blank" rel="noopener">
+    <strong>Email:</strong>
+    <a href="mailto:jmw.tre@gmail.com">
+      jmw.tre@gmail.com
+    </a>
+  </p>
+
+  <p>
+    <strong>LinkedIn:</strong>
+    <a
+      href="https://www.linkedin.com/in/john-walls-iii/"
+      target="_blank"
+      rel="noopener">
+      linkedin.com/in/john-walls-iii
+    </a>
+  </p>
+
+  <p>
+    <strong>GitHub:</strong>
+    <a
+      href="https://github.com/jmwallsIII"
+      target="_blank"
+      rel="noopener">
       github.com/jmwallsIII
     </a>
   </p>
 </section>
+
+
+<footer>
+  John Walls III | Data Analytics & Computer Science Portfolio
+</footer>
 
 </body>
 </html>
